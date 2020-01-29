@@ -14,7 +14,7 @@ class DataTables extends React.Component {
     this.editItems = this.editItems.bind(this);
     this.addProductClick = this.addProductClick.bind(this);
     this.updateProducts = this.updateProducts.bind(this);
-    this.canceFunc = this.canceFunc.bind(this);
+    this.cancelFunc = this.cancelFunc.bind(this);
     this.state = {
       selected: -1,
       isEdit: false,
@@ -26,7 +26,7 @@ class DataTables extends React.Component {
       price: ""
     };
   }
-  async componentDidMount() {
+  componentDidMount() {
     this.setState({
       products: tabledata.data
     });
@@ -83,7 +83,7 @@ class DataTables extends React.Component {
     this.setState({ products, isAdd: false });
   }
 
-  canceFunc() {
+  cancelFunc() {
     this.setState({
       isEdit: false,
       isAdd: false
@@ -209,7 +209,7 @@ class DataTables extends React.Component {
           <AddItem
             products={this.state.products}
             addProduct={this.addProduct}
-            canceFunc={this.canceFunc}
+            cancelFunc={this.cancelFunc}
           />
         ) : null}
         {this.state.isEdit ? (
@@ -219,7 +219,7 @@ class DataTables extends React.Component {
             description={this.state.description}
             price={this.state.price}
             updateProducts={this.updateProducts}
-            canceFunc={this.canceFunc}
+            cancelFunc={this.cancelFunc}
             isEdit={this.state.isEdit}
           />
         ) : null}

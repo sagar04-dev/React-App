@@ -69,7 +69,7 @@ class AddItem extends React.Component {
     }
   }
   onCancel() {
-    this.props.canceFunc();
+    this.props.cancelFunc();
   }
   render() {
     /*const submitbuttonstyle = {

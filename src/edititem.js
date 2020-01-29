@@ -56,7 +56,7 @@ class EditItem extends React.Component {
     );
   }
   onCancel() {
-    this.props.canceFunc();
+    this.props.cancelFunc();
   }
 
   render() {
