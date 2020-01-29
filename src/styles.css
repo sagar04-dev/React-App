@@ -2,3 +2,60 @@
   font-family: sans-serif;
   text-align: center;
 }
+.popup {
+  position: fixed;
+  width: 30%;
+  height: 30%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(226, 220, 220, 0.959);
+}
+.popup\_inner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  border-radius: 20px;
+  background: rgb(221, 159, 159);
+}
+.addProductstyle {
+  background: rgb(221, 159, 159);
+  width: 15%;
+  border-radius: 15px;
+  background: #5d9e03;
+  padding: 10px;
+  height: 45px;
+}
+.editbutton {
+  background: rgb(62, 149, 231);
+  width: 40%;
+  border-radius: 10px;
+  padding: 8px;
+  height: 30px;
+}
+.deletebutton {
+  width: 40%;
+  border-radius: 10px;
+  background: rgb(206, 57, 20);
+  padding: 8px;
+  height: 30px;
+}
+.submitbutton {
+  background: rgb(62, 149, 231);
+  width: 80%;
+  border-radius: 10px;
+  padding: 8px;
+  height: 30px;
+}
+.cancelbutton {
+  width: 40%;
+  border-radius: 10px;
+  background: rgb(255, 235, 51);
+  padding: 8px;
+  height: 30px;
+}

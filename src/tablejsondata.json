@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "scissor",
+      "description": "used to cut stuff",
+      "price": "20"
+    },
+    { "id": 2, "name": "stick", "description": "used to hold", "price": "23" },
+    { "id": 3, "name": "data", "description": "data to store", "price": "25" },
+    {
+      "id": 4,
+      "name": "knife",
+      "description": "used to cut things ",
+      "price": "25"
+    },
+    { "id": 5, "name": "data", "description": "data to store", "price": "30" },
+    { "id": 6, "name": "other", "description": "other things", "price": "40" }
+  ]
+}
