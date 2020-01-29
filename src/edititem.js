@@ -81,92 +81,92 @@ class EditItem extends React.Component {
 
     return (
       <div className="popup">
-        <div className="popup\_inner">
+        <div className="popup_inner">
           <h1>Edit product details</h1>
-          <form onSubmit={this.onEditSubmit}>
-            <Table width="300px" height="200px" align="center">
-              <tbody>
-                <tr>
-                  <td>
-                    <label>ID: </label>
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      value={this.props.id}
-                      onChange={this.onChangeItemId}
-                    />
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <label> Name: </label>
-                  </td>
-
-                  <td>
-                    <input
-                      type="text"
-                      value={this.state.name}
-                      onChange={this.onChangeItemName}
-                      required
-                      pattern="^[a-zA-Z0-9]*$"
-                    />
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <label>Description: </label>
-                  </td>
-
-                  <td>
-                    <input
-                      type="text"
-                      value={this.state.description}
-                      onChange={this.onChangeItemdescription}
-                    />
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <label>Price </label>
-                  </td>
-
-                  <td>
-                    <input
-                      type="text"
-                      value={this.state.price}
-                      onChange={this.onChangeItemprice}
-                    />
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <input
-                      type="submit"
-                      value="update"
-                      className="btn btn-primary"
-                      style={submitbuttonstyle}
-                    />
-                  </td>
-
-                  <td>
-                    <input
-                      type="button"
-                      value="cancel"
-                      className="btn btn-primary"
-                      style={cancelbuttonstyle}
-                      onClick={this.onCancel}
-                    />
-                  </td>
-                </tr>
-              </tbody>
-            </Table>
-          </form>
         </div>
+        <form className="edit-form" onSubmit={this.onEditSubmit}>
+          <Table width="300px" height="200px" align="center">
+            <tbody>
+              <tr>
+                <td>
+                  <label>ID: </label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    value={this.props.id}
+                    onChange={this.onChangeItemId}
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label> Name: </label>
+                </td>
+
+                <td>
+                  <input
+                    type="text"
+                    value={this.state.name}
+                    onChange={this.onChangeItemName}
+                    required
+                    pattern="^[a-zA-Z0-9]*$"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label>Description: </label>
+                </td>
+
+                <td>
+                  <input
+                    type="text"
+                    value={this.state.description}
+                    onChange={this.onChangeItemdescription}
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label>Price </label>
+                </td>
+
+                <td>
+                  <input
+                    type="text"
+                    value={this.state.price}
+                    onChange={this.onChangeItemprice}
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input
+                    type="submit"
+                    value="update"
+                    className="btn btn-primary"
+                    style={submitbuttonstyle}
+                  />
+                </td>
+
+                <td>
+                  <input
+                    type="button"
+                    value="cancel"
+                    className="btn btn-primary"
+                    style={cancelbuttonstyle}
+                    onClick={this.onCancel}
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </Table>
+        </form>
       </div>
     );
   }

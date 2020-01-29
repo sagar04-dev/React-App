@@ -5,7 +5,7 @@
 .popup {
   position: fixed;
   width: 30%;
-  height: 30%;
+  height: 45%;
   top: 0;
   left: 0;
   right: 0;
@@ -13,14 +13,14 @@
   margin: auto;
   background-color: rgba(226, 220, 220, 0.959);
 }
-.popup\_inner {
-  position: absolute;
-  left: 25%;
+.popup_inner {
+  position: initial;
+  /* left: 25%;
   right: 25%;
   top: 25%;
   bottom: 25%;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 20px; */
   background: rgb(221, 159, 159);
 }
 .addProductstyle {
@@ -58,4 +58,7 @@
   background: rgb(255, 235, 51);
   padding: 8px;
   height: 30px;
+}
+.edit-form {
+  position: initial;
 }
